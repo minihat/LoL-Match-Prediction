@@ -10,3 +10,4 @@ During the game, players engage in complex strategic actions to increase the str
 ![League of Legends Game Map](lol_map.png){: .center-image }
 
 **I propose to use neural networks to predict the outcome of a League of Legends match based upon player performance in prior games.** Due to the tremendous amount of data available, I anticipate that a network trained on a sufficiently large dataset can achieve a high accuracy at this prediction task.
+
