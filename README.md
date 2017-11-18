@@ -40,3 +40,8 @@ Player performance data will be measured by 50 variables for each match. Some of
 - Victory or Defeat
 
 Additional performance metrics will be drawn from match timelines, such as damage taken per minute, gold acquired per minute, and experience points gained per minute. 
+
+### Image Sources
+[Champions](http://www.siliconbeat.com/2015/02/02/quoted-league-of-legends-as-online-psych-experiment/)
+[Map](http://www.scholarlygamers.com/feature/2017/04/28/design-choices-league-legends-iconic-map-dictate-tempo-game/)
+[Zac](https://giantking.deviantart.com/art/LoL-Zac-Wallpaper-458640460)
