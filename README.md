@@ -41,6 +41,26 @@ Player performance data will be measured by 50 variables for each match. Some of
 
 Additional performance metrics will be drawn from match timelines, such as damage taken per minute, gold acquired per minute, and experience points gained per minute. 
 
+## Expected Results
+Randomly guessing which team will win a League of Legends match is like flipping a coin. The expected accuracy approaches 50% as the number of games in the dataset increases. 
+
+Clever League of Legends players have come up with heuristics to help them evaluate whether a game is likely to be won. Some of the features examined by such players include "team composition", or the set of champion characters that are selected by the team; player champion mastery, or how experienced players are using a particular champion, and which side of the battlefield their team is on (blue or red). 
+
+To establish a baseline performance metric, I decided to analyze several thousand League of Legends matches and attempt to predict a winner using these metrics. Team composition was too complex to analyze with only several thousand games, so I discarded this analysis. However, player champion mastery was sufficient to predict winrate with an accuracy of 60%. I also tested the truth of the player theory that the blue team wins more often than the red team. In League of Legends matches, the blue team starts at the bottom left of the screen and advances towards the top right, while the red team follows the opposite path. I discovered that indeed, the blue team wins 55% of League of Legends matches, despite rumors that Riot has attempted to rebalance the teams by having the matchmaking system select players with marginally higher skill levels overall for the red team.
+
+Mention of the League of Legends matchmaking system brings me to an important point. Since there is an intelligent agent selecting the matchups for League of Legends (attempting to make them as fair as possible, presumably), why do I predict that a neural network can achieve better than 50% accuracy at classifying the winner to a matchup?
+
+The answer is that the matchmaking system has to balance creating fair team matchups with doing so in a timely manner. Therefore, I infer that Riot's matchmaking algorithm is likely not optimized entirely for matchup fairness. This means that a prediction system with a sufficient amount of data may be able to achieve greater than 50% accuracy at win prediction. If Riot's matchmaking system is indeed optimized well enough that it can match the performance of a large neural network on win prediction, then I expect the neural network will not achieve much greater than 50% accuracy at win prediction.
+
+## Bibliography
+Several attempts have been made to use data fitting models for League of Legends match prediction. 
+
+[A project by Lucas Lin](http://cs229.stanford.edu/proj2016/report/Lin-LeagueOfLegendsMatchOutcomePrediction-report.pdf) showed that champion mastery and summoner spells were insufficient for successful pre-match prediction with gradient boosted trees. He also showed that the inclusion of data from the match (unsurprisingly) contributed to a better prediction of win/loss outcomes.
+
+[This project by Thomas Huang, David Kim, and Leung](http://thomasythuang.github.io/League-Predictor/) claims to be able to predict the win probability with a success rate of over 90% using player-specific champion win rates as pre-match data. They compare the performance of Decision Trees, Nearest Neighbor, Multilayer Perceptron, and two flavors of Bayesian Networks on this task. One problem with their approach is that the champion specific win rate data they rely on is no longer available in the Riot API. 
+
+My approach uses dramatically more features to evaluate player skill and win potential than either of these precedents. Therefore, I predict that this new approach will outperform the results from the above references.
+
 ### Image Sources
 [Champions](http://www.siliconbeat.com/2015/02/02/quoted-league-of-legends-as-online-psych-experiment/)
 [Map](http://www.scholarlygamers.com/feature/2017/04/28/design-choices-league-legends-iconic-map-dictate-tempo-game/)
