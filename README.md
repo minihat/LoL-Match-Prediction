@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="./main.css">
 
+See the final report on the project [here.](https://github.com/minihat/LoL-Match-Prediction/blob/master/FINAL%20REPORT.pdf)
+
 # Overview
 League of Legends is a popular multiplayer online battle arena (MOBA) video game. Two teams of five players control characters called "champions" and compete to complete objectives. Teams begin the game on opposite corners of a sizeable map. To win the game, they must destroy a sequence of enemy turrets, invade the enemy base, and destroy the enemy nexus.
 
