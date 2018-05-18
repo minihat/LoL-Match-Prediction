@@ -2,6 +2,10 @@
 
 [See the final report on this project here.](https://github.com/minihat/LoL-Match-Prediction/blob/master/FINAL%20REPORT.pdf)
 
+There have been a few requests for me to add better documentation, and help make it clear how to reproduce the results in my report. I am working on a script which produces all of the figures from the report; this should help answer everyone's questions. The primary problem is that the training and testing sets I used are quite massive. I'll try to add these to a google drive folder or something in the near future, or at the very least provide a script which can be used to pull comparable datasets from the riot API. My opinion is that research (even of the hobby variety) is mostly worthless unless it can be easily reproduced. So, stay tuned for better documentation and updates coming sometime this summer. 
+Thanks,
+Ken
+
 # Overview
 League of Legends is a popular multiplayer online battle arena (MOBA) video game. Two teams of five players control characters called "champions" and compete to complete objectives. Teams begin the game on opposite corners of a sizeable map. To win the game, they must destroy a sequence of enemy turrets, invade the enemy base, and destroy the enemy nexus.
 
